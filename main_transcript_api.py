@@ -11,7 +11,7 @@ def f_pipeline_tapi():
         for _ in main_tapi_transcript_dict.values():
             print(_[0], _[1])
     try:
-        f_input(main_tapi_identifier[0], main_tapi_transcript_dict)
+        f_input(main_tapi_identifier, main_tapi_transcript_dict)
     except Exception as e:
         print(f"{e}")
         return None
@@ -19,3 +19,4 @@ def f_pipeline_tapi():
 
 if __name__ == "__main__":
     f_pipeline_tapi()
+
